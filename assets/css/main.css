@@ -17728,7 +17728,7 @@ body .ui-tooltip {
   }
 }
 .why-choose-us__item:not(:last-child) {
-  margin-bottom: 70px;
+  margin-bottom: 30px;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
   .why-choose-us__item:not(:last-child) {
@@ -24910,4 +24910,96 @@ body .ui-tooltip {
   }
 }
 
-/*# sourceMappingURL=main.css.map */
+
+.testimonial-section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.testimonial-section h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+.slider {
+  position: relative;
+  max-width: 1100px;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 50px;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.testimonial {
+  flex: 0 0 33.33%;
+  box-sizing: border-box;
+  padding: 15px;
+}
+
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+  height: 100%;
+}
+
+.card p {
+  font-size: 15px;
+  color: #555;
+}
+
+.card h4 {
+  margin: 15px 0 5px;
+  color: #f39c12;
+}
+
+.card span {
+  font-weight: bold;
+  color: #333;
+}
+
+/* Arrows */
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #333;
+  color: white;
+  border: none;
+  width: 45px;
+  height: 45px;
+  cursor: pointer;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  z-index: 10;
+  transition: 0.3s;
+}
+
+.prev { left: 0; }
+.next { right: 0; }
+
+.prev:hover, .next:hover {
+  background: #f39c12;
+}
+
+/* Tablet */
+@media(max-width: 992px) {
+  .testimonial {
+    flex: 0 0 50%;
+  }
+}
+
+/* Mobile */
+@media(max-width: 600px) {
+  .testimonial {
+    flex: 0 0 100%;
+  }
+}
