@@ -25088,7 +25088,25 @@ to{opacity:0.7;}
 .offer-badge{
 font-size:14px;
 padding:8px 15px;
-top:15px;
+top:300px;
 }
 
+}
+
+.glow-btn {
+  padding: 12px 25px;
+  background: green;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  animation: glow 1.5s infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    box-shadow: 0 0 5px green;
+  }
+  to {
+    box-shadow: 0 0 20px green, 0 0 30px green;
+  }
 }

@@ -295,51 +295,51 @@ font-size:14px;
 
 
     <!-- Floating Contact Button -->
-<button class="contact-float-btn" onclick="openModal()">
-  Contact Us
+<button class="contact-float-btn glow-btn" onclick="openModal()">
+  Book Now
 </button>
 
 <div id="contactModal" class="modals">
   <div class="modals-contents">
     <span class="close-btn" onclick="closeModal()">&times;</span>
 
-    <form>
+  <form action="sendmail.php" method="POST">
 
-      <div class="rows">
-        <div class="input-group">
-          <label>Name:</label>
-          <input type="text" placeholder="Enter Your Name" required>
-        </div>
+<div class="rows">
+  <div class="input-group">
+    <label>Name:</label>
+    <input type="text" name="name" placeholder="Enter Your Name" required>
+  </div>
 
-        <div class="input-group">
-          <label>Contact No:</label>
-          <input type="tel" placeholder="Enter Your Contact No" required>
-        </div>
-      </div>
+  <div class="input-group">
+    <label>Contact No:</label>
+    <input type="tel" name="phone" placeholder="Enter Your Contact No" required>
+  </div>
+</div>
 
-      <div class="input-group">
-        <label>Email:</label>
-        <input type="email" placeholder="Enter Your Email" required>
-      </div>
+<div class="input-group">
+  <label>Email:</label>
+  <input type="email" name="email" placeholder="Enter Your Email" required>
+</div>
 
-      <div class="input-group">
-        <label>Choose a Service:</label>
-        <select required>
-          <option value="">Choose Services</option>
-          <option>Elegant Sheer Curtains</option>
-          <option>Effective Blackout Curtains</option>
-          <option>Modern Motorized Curtains</option>
-        </select>
-      </div>
+<div class="input-group">
+  <label>Choose a Service:</label>
+  <select name="service" required>
+    <option value="">Choose Services</option>
+    <option value="Elegant Sheer Curtains">Elegant Sheer Curtains</option>
+    <option value="Effective Blackout Curtains">Effective Blackout Curtains</option>
+    <option value="Modern Motorized Curtains">Modern Motorized Curtains</option>
+  </select>
+</div>
 
-      <div class="input-group">
-        <label>Message:</label>
-        <textarea rows="4" placeholder="Type your question"></textarea>
-      </div>
+<div class="input-group">
+  <label>Message:</label>
+  <textarea name="message" rows="4" placeholder="Type your question"></textarea>
+</div>
 
-      <button type="submit" class="submit-btn">Submit »</button>
+<button type="submit" class="submit-btn">Submit »</button>
 
-    </form>
+</form>
   </div>
 </div>
 
@@ -375,7 +375,8 @@ font-size:14px;
                                         </div>
 
                                         <div class="offer-badge">
-⚡ Limited Time Offer – Up To 25% Off on Curtains
+                                            <img src="assets/imgs/landing/offer.jpeg" alt="offer" width="300px">
+
 </div>
 
                                         <!-- <div class="banner__item-content-link">
@@ -418,7 +419,7 @@ font-size:14px;
                                             </a>
                                         </div>
                                                                  <div class="offer-badge">
-⚡ Limited Time Offer – Up To 25% Off on Curtains
+<img src="assets/imgs/landing/offer.jpeg" alt="offer" width="300px">
 </div>
                                         
 
@@ -452,7 +453,7 @@ font-size:14px;
                                             </a>
                                         </div>
                                                                  <div class="offer-badge">
-⚡ Limited Time Offer – Up To 25% Off on Curtains
+<img src="assets/imgs/landing/offer.jpeg" alt="offer" width="300px">
 </div>
                                         
 
