@@ -25059,6 +25059,32 @@ body .ui-tooltip {
   }
 }
 
+.glow-img img{
+  width: 400px; /* adjust as needed */
+  filter: drop-shadow(0 0 15px rgba(255, 200, 0, 0.8));
+}
+
+.glow-img{
+position:absolute;
+top:20px;
+left:70%;
+padding-right: 50p;
+}
+
+@media (max-width:600px){
+  .glow-img{
+    top:250px;
+left:20%;
+
+  }
+  .glow-img img{
+  width: 250px; /* adjust as needed */
+  filter: drop-shadow(0 0 15px rgba(255, 200, 0, 0.8));
+}
+}
+
+
+
 .offer-badge{
 position:absolute;
 top:20px;
