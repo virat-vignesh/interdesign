@@ -194,12 +194,12 @@ h2 {
   padding: 20px;
 } */
 
-.row {
+/* .row {
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid #1c5b49;
   padding: 12px 0;
-}
+} */
 
 /* .row span {
   color: #a0b9b0;
@@ -227,11 +227,213 @@ h2 {
   .row {
     flex-direction: column;
     gap: 5px;
-  }
+  } 
 
-  .row span,
+  /* .row span,
   .row p {
     width: 100%;
+  } */
+}
+
+.process-section {
+  background: linear-gradient(135deg, #06221a, #0b3e27);
+  color: #fff;
+  padding: 80px 20px;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.tag {
+  color: #c7a44b;
+  font-size: 12px;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.process-section h2 {
+  font-size: 42px;
+  margin-bottom: 15px;
+}
+
+.subtitle {
+  color: #b7c9c3;
+  max-width: 600px;
+  margin-bottom: 60px;
+}
+
+/* GRID */
+.process-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+}
+
+/* STEP */
+.step {
+  position: relative;
+  padding-right: 20px;
+}
+
+/* Vertical divider */
+.step:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 20%;
+  height: 60%;
+  width: 1px;
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.number {
+  font-size: 48px;
+  color: rgba(255, 255, 255, 0.1);
+  display: block;
+  margin-bottom: 10px;
+}
+
+.step h3 {
+  color: #e3c066;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.step p {
+  color: #c4d6cf;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* 🔥 Responsive */
+@media (max-width: 992px) {
+  .process-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+
+  .step::after {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .process-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .process-section h2 {
+    font-size: 28px;
+  }
+
+  .number {
+    font-size: 36px;
+  }
+}
+
+.collection-section {
+  background: linear-gradient(135deg, #0b3d2e, #1e4d38);
+  color: #fff;
+  padding: 80px 20px;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.tag {
+  color: #c7a44b;
+  font-size: 12px;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.collection-section h2 {
+  font-size: 42px;
+  margin-bottom: 15px;
+}
+
+.subtitle {
+  color: #b7c9c3;
+  max-width: 600px;
+  margin-bottom: 50px;
+}
+
+/* GRID */
+.collection-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border: 1px solid rgba(255,255,255,0.15);
+}
+
+/* CARD */
+.collection-card {
+  padding: 40px;
+  border-right: 1px solid rgba(255,255,255,0.15);
+  border-bottom: 1px solid rgba(255,255,255,0.15);
+}
+
+.collection-card:last-child {
+  border-right: none;
+}
+
+.collection-card h3 {
+  color: #e3c066;
+  margin: 15px 0;
+}
+
+.collection-card p {
+  color: #c4d6cf;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* ICONS */
+.icon {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #c7a44b;
+  margin-bottom: 15px;
+}
+
+.icon.circle {
+  border-radius: 50%;
+}
+
+.icon.triangle {
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 35px solid #c7a44b;
+  background: none;
+}
+
+/* 🔥 RESPONSIVE */
+@media (max-width: 992px) {
+  .collection-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .collection-card:nth-child(2) {
+    border-right: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .collection-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .collection-card {
+    border-right: none;
+  }
+
+  .collection-section h2 {
+    font-size: 28px;
   }
 }
     </style>
@@ -625,6 +827,46 @@ h2 {
         </div>
     </section>
 
+    <section class="collection-section">
+  <div class="container">
+
+    <p class="tag">OUR COLLECTIONS</p>
+    <h2>Curated for every room & style</h2>
+    <p class="subtitle">
+      From blackout bedrooms to sun-drenched living rooms — explore our full range of designer curtains and smart blind systems.
+    </p>
+
+    <div class="collection-grid">
+
+      <div class="collection-card">
+        <!-- <div class="icon box"></div> -->
+        <h3>Blackout Curtains</h3>
+        <p>
+          Complete light blocking for restful bedroom sleep. Available in linen, cotton, silk, and velvet.
+        </p>
+      </div>
+
+      <div class="collection-card">
+        <!-- <div class="icon circle"></div> -->
+        <h3>Sheer & Voile</h3>
+        <p>
+          Softly diffuse natural light in living rooms while maintaining an airy, open ambience.
+        </p>
+      </div>
+
+      <div class="collection-card">
+        <!-- <div class="icon triangle"></div> -->
+        <h3>Geometric & Floral</h3>
+        <p>
+          Themed collections for kids’ rooms, bold statement walls, and playful modern interiors.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
 
 
     <section class="compare-section">
@@ -690,7 +932,52 @@ h2 {
 
   
 
+<section class="process-section">
+  <div class="container">
 
+    <p class="tag">HOW IT WORKS</p>
+    <h2>The Zero-Stress Process</h2>
+    <p class="subtitle">
+      We bring the showroom experience directly to your home — from fabric samples to final installation.
+    </p>
+
+    <div class="process-grid">
+
+      <div class="step">
+        <span class="number">01</span>
+        <h3>Free Consultation</h3>
+        <p>
+          Book an appointment and we’ll come to you — fabric samples, measurements, and design advice included.
+        </p>
+      </div>
+
+      <div class="step">
+        <span class="number">02</span>
+        <h3>Expert Measuring</h3>
+        <p>
+          Our professionals take precise measurements of every window to ensure a flawless, custom fit.
+        </p>
+      </div>
+
+      <div class="step">
+        <span class="number">03</span>
+        <h3>Professional Install</h3>
+        <p>
+          Sit back while our expert team handles complete installation from start to finish.
+        </p>
+      </div>
+
+      <div class="step">
+        <span class="number">04</span>
+        <h3>After-Sales Support</h3>
+        <p>
+          Worry-free ownership backed by exceptional after-sales care and product warranty.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
 
  
   <!--about-us area start -->
