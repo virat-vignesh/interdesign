@@ -136,6 +136,104 @@ font-size:14px;
 }
 
 }
+
+
+
+
+.compare-section {
+  background: #062f23;
+  color: #fff;
+  padding: 80px 20px;
+}
+
+/* .container {
+  max-width: 1100px;
+  margin: auto;
+} */
+
+.tag {
+  color: #c7a44b;
+  letter-spacing: 2px;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 42px;
+  margin: 0 0 15px;
+}
+
+.subtitle {
+  color: #b7c9c3;
+  max-width: 600px;
+  margin-bottom: 40px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+}
+
+.card {
+  /* background: #083a2c; */
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #1c5b49;
+}
+
+.card-header {
+  background: #c7a44b;
+  color: #000;
+  padding: 18px;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+/* .card-body {
+  padding: 20px;
+} */
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #1c5b49;
+  padding: 12px 0;
+}
+
+/* .row span {
+  color: #a0b9b0;
+  font-size: 12px;
+  letter-spacing: 1px;
+  width: 35%;
+} */
+/* 
+.row p {
+  width: 60%;
+  margin: 0;
+  font-size: 14px;
+} */
+
+/* 🔥 Responsive */
+@media (max-width: 768px) {
+  h2 {
+    font-size: 28px;
+  }
+
+  /* .cards {
+    grid-template-columns: 1fr;
+  } */
+
+  /* .row {
+    flex-direction: column;
+    gap: 5px;
+  } */
+
+  .row span,
+  .row p {
+    width: 100%;
+  }
+}
     </style>
 </head>
 
@@ -245,53 +343,6 @@ font-size:14px;
 <div class="offcanvas__overlay-white"></div>
 <!-- Offcanvas area start -->
 
-<!-- Header area start -->
-<header>
-    <!-- <div id="header-sticky" class="header__area header-1" style="background-color: rgb(9, 28, 9);">
-        <div class="container">
-            <div class="mega__menu-wrapper p-relative">
-                <div class="header__main">
-                    <div class="header__logo">
-                        <a href="index.html">
-                            <div class="logo">
-                                <img src="assets/imgs/landing/logo1.png" width="150px" alt="logo not found">
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="mean__menu-wrapper d-none d-lg-block">
-                        <div class="main-menu">
-                            <nav id="mobile-menu">
-                                <ul>
-                                    <li><a href="">Home</a></li>
-                                    <li><a href="#about-us">About us</a></li>
-                                    <li><a href="#services">Services</a></li>
-                                    <li><a href="#works">Works</a></li>
-                                    <li><a href="#whyus">Why Us</a></li>
-                                    <li><a href="#contact">Contact</a></li>
-                                </ul>
-                            </nav>
-                        </div>
-                    </div>
-
-                    <div class="header__right">
-                        <div class="header__action d-flex align-items-center">
-                            <div class="header__hamburger">
-                                <div class="sidebar__toggle">
-                                    <a class="bar-icon" href="javascript:void(0)">
-                                        <span></span>
-                                        <span></span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
-</header>
-<!-- Header area end -->
 
 
 
@@ -462,16 +513,7 @@ font-size:14px;
 
 </div>                                               
 
-                                        <!-- <div class="banner__item-content-link">
-                                            <a href="assets/imgs/landing/ddd.mp4" class="popup-video d-flex align-items-center" data-effect="mfp-move-from-top vertical-middle">
-                                                <div class="icon"  style="background-color: rgb(13, 40, 13);">
-                                                    <h6 style="color: white; padding-right: 10px;">click </h6>
-                                                    <svg width="34" height="38" viewBox="0 0 34 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M33.656 19.0001L0.598633 37.7624V0.237793L33.656 19.0001Z" fill="#906E50"/>
-                                                    </svg>                                                        
-                                                </div>
-                                            </a>
-                                        </div> -->
+                                        
                                     </div>
                                 </div>
                             </div>
@@ -480,397 +522,18 @@ font-size:14px;
                 </div>
                 
             </div>
-            <div class="banner__bottom-wrapper">
-
-                <div class="banner__slider__arrow">
-                    <button class="banner__slider__arrow-prev d-flex align-items-center justify-content-center wow clip-t-b">
-                        <svg width="27" height="16" viewBox="0 0 27 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M1 8L26 8" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M19.75 1L26 8L19.75 15" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                    </button>
-    
-                    <button class="banner__slider__arrow-next d-flex align-items-center justify-content-center wow clip-t-b">
-                        <svg width="27" height="16" viewBox="0 0 27 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M26 8L1 8" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M7.25 1L1 8L7.25 15" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>                            
-                    </button>
-                </div>
-
-                <div class="banner__bottom-title">
-                    <h6><a href="blog-details.html">Creating Spaces Through<span> Innovative Design.</span> </a></h6>
-                </div>
-
-                <div class="swiper-container gallery-thumbs">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide"><img src="./assets/imgs/landing/curtains-17.jpg" alt="curtain image"></div>
-                        <div class="swiper-slide"><img src="./assets/imgs/landing/curtains-14.jpg" alt="curtain image"></div>
-                        <div class="swiper-slide"><img src="./assets/imgs/landing/curtains-10.jpg" alt="curtain image"></div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- <div class="banner__socail-media">
-                <ul>
-                    <li><a href="https://www.facebook.com/">Facebook</a></li>
-                    <li><a href="https://www.instagram.com/">Instagram</a></li>
-                    <li><a href="https://x.com/tweeter">Tweeter</a></li>
-                    <li><a href="https://dribbble.com/">DRIBBBLE </a></li>
-                </ul>
-            </div> -->
+            
+           
         </div>
 
     </section>
     <!-- Banner area end -->
 
-    <!--about-us area start -->
-    <section id="about-us" class="about-us section-space">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6">
-                    <div class="about-us__media">
-                        <img class="wow clip-a-z" src="assets/imgs/landing/image.png" alt="curtain images">
-
-                        <div class="about-us__box">
-                            <h4><span class="odometer" data-count="20">0</span></h4>
-                            <h6>Years <br> Experience</h6>
-                        </div>
-
-                        <!-- <div class="about-us__socail">
-                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                        </div> -->
-                    </div>
-                </div>
-
-                <div class="col-lg-6">
-                    <div class="about-us__content">
-                        <div class="section__title-wrapper mb-45 mb-xs-40">
-                            <span class="section__subtitle justify-content-center" id="about-us">About Us</span>
-                            <h2 class="section__title mb-25 title-animation" style=" color:white;">Elegant Curtain Solutions in Bangalore</h2>
-                            <p class="mb-1" style=" color:white;">We are a Bangalore-based curtain and window décor specialist offering premium Sheer Curtains, Blackout Curtains, and Motorized Curtains designed to transform your interiors with style and functionality.</p>
-                            <p class="mb-1" style=" color:white;">Our goal is to enhance homes across Bangalore with customized window solutions that provide elegance, privacy, light control, and modern smart convenience. Whether you prefer soft natural light, complete blackout comfort, or automated motorized systems, we tailor every curtain to match your lifestyle and space.</p>
-                            <p class="mb-0" style=" color:white;">From expert measurement to professional installation, we ensure a perfect fit, premium quality fabrics, and flawless finishing for every window.</p>
-                        </div>
-
-                        <div class="skill-one__progress mb-50 mb-xs-30">
-                            <div class="skill-one__progress-single">
-                                <h6 class="skill-one__progress-title" style=" color:white;">Sheer curatisn</h6>
-                                <div class="bar">
-                                    <div class="bar-inner count-bar counted" data-percent="90%">
-                                        <div class="count-text" style=" color:white;">90%</div>
-                                    </div>
-                                </div>
-                            </div>
-    
-                            <div class="skill-one__progress-single">
-                                <h6 class="skill-one__progress-title" style=" color:white;">Balckout Curtains</h6>
-                                <div class="bar">
-                                    <div class="bar-inner count-bar counted" data-percent="80%">
-                                        <div class="count-text" style=" color:white;">80%</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="skill-one__progress-single">
-                                <h6 class="skill-one__progress-title" style=" color:white;">Motorized Curtains</h6>
-                                <div class="bar">
-                                    <div class="bar-inner count-bar counted" data-percent="95%">
-                                        <div class="count-text" style=" color:white;">95%</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-    
-                        <a href="#contact" class="rr-btn">
-                            <span class="btn-wrap">
-                                <span class="text-one">Learn More 
-                                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M1 6.5H11" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                        <path d="M6 1.5L11 6.5L6 11.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>
-                                </span>
-                                <span class="text-two">Learn More 
-                                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M1 6.5H11" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                        <path d="M6 1.5L11 6.5L6 11.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>
-                                </span>
-                            </span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--about-us area end -->
-
-     <section class="our-team section-space" style="background-color: white;">
+     <section class="why-choose-us" style="background-color: white; padding: 15px;">
         <div class="container">
             <div class="row">
                 <div class="section__title-wrapper text-center mb-55 mb-xs-40">
-                    <span class="section__subtitle justify-content-center " id="services">Services</span>
-                    <h2 class="section__title title-animation">Our Curtain Design & Installation Services</h2>
-                </div>
-            </div>
-            <div class="row mb-minus-30">
-                <div class="col-lg-4">
-                    <div class="our-team__item">
-                        <div class="our-team__item-media wow clip-a-z">
-                            <img src="./assets/imgs/landing/bal.jpg" alt="curtain images">
-                        </div>
-                        <div class="our-team__item__text">
-                            <h6><a href="tema-details.html">Elegant Sheer Curtains</a></h6>
-                            <span>Comfort Begins at the Window.</span>
-                        </div>
-
-                        <!-- <div class="our-team__item__socail">
-                            <a href="https://www.facebook.com">
-                                <svg width="8" height="16" viewBox="0 0 8 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M5.19311 16V8.70218H7.55084L7.90457 5.85725H5.19311V4.04118C5.19311 3.21776 5.41238 2.65661 6.55063 2.65661L8 2.65599V0.111384C7.74935 0.0775563 6.88896 0 5.88756 0C3.79647 0 2.36488 1.32557 2.36488 3.75942V5.85725H0V8.70218H2.36488V16H5.19311Z" fill="white"/>
-                                </svg>                                    
-                            </a>
-                            <a href="https://x.com/?lang=en">
-                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M8.3319 5.92804L13.5437 0H12.3087L7.78327 5.14724L4.16883 0H0L5.46574 7.78354L0 14H1.2351L6.01406 8.56434L9.83117 14H14L8.3319 5.92804ZM6.64026 7.85211L6.08647 7.07705L1.68013 0.909771H3.57717L7.13314 5.88696L7.68693 6.66202L12.3093 13.1316H10.4122L6.64026 7.85211Z" fill="white"/>
-                                </svg>
-                            </a>
-                            <a href="https://www.instagram.com/">
-                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M12.334 4.66649C12.8863 4.66649 13.334 4.21878 13.334 3.66651C13.334 3.11424 12.8863 2.66654 12.334 2.66654C11.7817 2.66654 11.334 3.11424 11.334 3.66651C11.334 4.21878 11.7817 4.66649 12.334 4.66649Z" fill="white"/>
-                                    <path d="M8.00002 3.9999C5.79041 3.9999 4.00002 5.79044 4.00002 7.9998C4.00002 10.2083 5.79041 12.0001 8.00002 12.0001C10.209 12.0001 12 10.2083 12 7.9998C12 5.79044 10.209 3.9999 8.00002 3.9999ZM8.00002 10.6667C6.5274 10.6667 5.33342 9.47278 5.33342 7.9998C5.33342 6.52683 6.5274 5.33327 8.00002 5.33327C9.47264 5.33327 10.6666 6.52683 10.6666 7.9998C10.6666 9.47278 9.47264 10.6667 8.00002 10.6667Z" fill="white"/>
-                                    <path d="M12 0H4C1.8002 0 0 1.80015 0 3.9999V12.0001C0 14.1993 1.8002 16 4 16H12C14.1998 16 16 14.1993 16 12.0001V3.9999C16 1.80015 14.1998 0 12 0ZM14.6666 12.0001C14.6666 13.4701 13.4708 14.6666 12 14.6666H4C2.5298 14.6666 1.3334 13.4701 1.3334 12.0001V3.9999C1.3334 2.52955 2.5298 1.33337 4 1.33337H12C13.4708 1.33337 14.6666 2.52955 14.6666 3.9999V12.0001Z" fill="white"/>
-                                </svg>                                    
-                            </a>
-                            <a href="https://bd.linkedin.com/">
-                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M16 16V10.14C16 7.26 15.38 5.06 12.02 5.06C10.4 5.06 9.32 5.94 8.88 6.78H8.84V5.32H5.66V16H8.98V10.7C8.98 9.3 9.24 7.96 10.96 7.96C12.66 7.96 12.68 9.54 12.68 10.78V15.98H16V16Z" fill="white"/>
-                                    <path d="M0.26 5.32H3.58V16H0.26V5.32Z" fill="white"/>
-                                    <path d="M1.92 0C0.86 0 0 0.86 0 1.92C0 2.98 0.86 3.86 1.92 3.86C2.98 3.86 3.84 2.98 3.84 1.92C3.84 0.86 2.98 0 1.92 0Z" fill="white"/>
-                                </svg>                                                                       
-                            </a>
-                        </div> -->
-                    </div>
-                </div>
-                 <div class="col-lg-4">
-                    <div class="our-team__item">
-                        <div class="our-team__item-media wow clip-a-z">
-                            <img src="./assets/imgs/landing/bal1.jpg" alt="curtain images">
-                        </div>
-                        <div class="our-team__item__text">
-                            <h6><a href="tema-details.html">Effective Blackout Curtains</a></h6>
-                            <span>Soft Touch. Strong Impression</span>
-                        </div>
-
-                        <!-- <div class="our-team__item__socail">
-                            <a href="https://www.facebook.com">
-                                <svg width="8" height="16" viewBox="0 0 8 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M5.19311 16V8.70218H7.55084L7.90457 5.85725H5.19311V4.04118C5.19311 3.21776 5.41238 2.65661 6.55063 2.65661L8 2.65599V0.111384C7.74935 0.0775563 6.88896 0 5.88756 0C3.79647 0 2.36488 1.32557 2.36488 3.75942V5.85725H0V8.70218H2.36488V16H5.19311Z" fill="white"/>
-                                </svg>                                    
-                            </a>
-                            <a href="https://x.com/?lang=en">
-                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M8.3319 5.92804L13.5437 0H12.3087L7.78327 5.14724L4.16883 0H0L5.46574 7.78354L0 14H1.2351L6.01406 8.56434L9.83117 14H14L8.3319 5.92804ZM6.64026 7.85211L6.08647 7.07705L1.68013 0.909771H3.57717L7.13314 5.88696L7.68693 6.66202L12.3093 13.1316H10.4122L6.64026 7.85211Z" fill="white"/>
-                                </svg>
-                            </a>
-                            <a href="https://www.instagram.com/">
-                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M12.334 4.66649C12.8863 4.66649 13.334 4.21878 13.334 3.66651C13.334 3.11424 12.8863 2.66654 12.334 2.66654C11.7817 2.66654 11.334 3.11424 11.334 3.66651C11.334 4.21878 11.7817 4.66649 12.334 4.66649Z" fill="white"/>
-                                    <path d="M8.00002 3.9999C5.79041 3.9999 4.00002 5.79044 4.00002 7.9998C4.00002 10.2083 5.79041 12.0001 8.00002 12.0001C10.209 12.0001 12 10.2083 12 7.9998C12 5.79044 10.209 3.9999 8.00002 3.9999ZM8.00002 10.6667C6.5274 10.6667 5.33342 9.47278 5.33342 7.9998C5.33342 6.52683 6.5274 5.33327 8.00002 5.33327C9.47264 5.33327 10.6666 6.52683 10.6666 7.9998C10.6666 9.47278 9.47264 10.6667 8.00002 10.6667Z" fill="white"/>
-                                    <path d="M12 0H4C1.8002 0 0 1.80015 0 3.9999V12.0001C0 14.1993 1.8002 16 4 16H12C14.1998 16 16 14.1993 16 12.0001V3.9999C16 1.80015 14.1998 0 12 0ZM14.6666 12.0001C14.6666 13.4701 13.4708 14.6666 12 14.6666H4C2.5298 14.6666 1.3334 13.4701 1.3334 12.0001V3.9999C1.3334 2.52955 2.5298 1.33337 4 1.33337H12C13.4708 1.33337 14.6666 2.52955 14.6666 3.9999V12.0001Z" fill="white"/>
-                                </svg>                                    
-                            </a>
-                            <a href="https://bd.linkedin.com/">
-                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M16 16V10.14C16 7.26 15.38 5.06 12.02 5.06C10.4 5.06 9.32 5.94 8.88 6.78H8.84V5.32H5.66V16H8.98V10.7C8.98 9.3 9.24 7.96 10.96 7.96C12.66 7.96 12.68 9.54 12.68 10.78V15.98H16V16Z" fill="white"/>
-                                    <path d="M0.26 5.32H3.58V16H0.26V5.32Z" fill="white"/>
-                                    <path d="M1.92 0C0.86 0 0 0.86 0 1.92C0 2.98 0.86 3.86 1.92 3.86C2.98 3.86 3.84 2.98 3.84 1.92C3.84 0.86 2.98 0 1.92 0Z" fill="white"/>
-                                </svg>                                                                       
-                            </a>
-                        </div> -->
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="our-team__item">
-                        <div class="our-team__item-media wow clip-a-z">
-                            <img src="./assets/imgs/landing/bal3.jpg" alt="curtain images">
-                        </div>
-                        <div class="our-team__item__text">
-                            <h6><a href="tema-details.html">Modern Motorized Curtains</a></h6>
-                            <span>One Click. Curtain Magic</span>
-                        </div>
-
-                        <!-- <div class="our-team__item__socail">
-                            <a href="https://www.facebook.com">
-                                <svg width="8" height="16" viewBox="0 0 8 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M5.19311 16V8.70218H7.55084L7.90457 5.85725H5.19311V4.04118C5.19311 3.21776 5.41238 2.65661 6.55063 2.65661L8 2.65599V0.111384C7.74935 0.0775563 6.88896 0 5.88756 0C3.79647 0 2.36488 1.32557 2.36488 3.75942V5.85725H0V8.70218H2.36488V16H5.19311Z" fill="white"/>
-                                </svg>                                    
-                            </a>
-                            <a href="https://x.com/?lang=en">
-                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M8.3319 5.92804L13.5437 0H12.3087L7.78327 5.14724L4.16883 0H0L5.46574 7.78354L0 14H1.2351L6.01406 8.56434L9.83117 14H14L8.3319 5.92804ZM6.64026 7.85211L6.08647 7.07705L1.68013 0.909771H3.57717L7.13314 5.88696L7.68693 6.66202L12.3093 13.1316H10.4122L6.64026 7.85211Z" fill="white"/>
-                                </svg>
-                            </a>
-                            <a href="https://www.instagram.com/">
-                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M12.334 4.66649C12.8863 4.66649 13.334 4.21878 13.334 3.66651C13.334 3.11424 12.8863 2.66654 12.334 2.66654C11.7817 2.66654 11.334 3.11424 11.334 3.66651C11.334 4.21878 11.7817 4.66649 12.334 4.66649Z" fill="white"/>
-                                    <path d="M8.00002 3.9999C5.79041 3.9999 4.00002 5.79044 4.00002 7.9998C4.00002 10.2083 5.79041 12.0001 8.00002 12.0001C10.209 12.0001 12 10.2083 12 7.9998C12 5.79044 10.209 3.9999 8.00002 3.9999ZM8.00002 10.6667C6.5274 10.6667 5.33342 9.47278 5.33342 7.9998C5.33342 6.52683 6.5274 5.33327 8.00002 5.33327C9.47264 5.33327 10.6666 6.52683 10.6666 7.9998C10.6666 9.47278 9.47264 10.6667 8.00002 10.6667Z" fill="white"/>
-                                    <path d="M12 0H4C1.8002 0 0 1.80015 0 3.9999V12.0001C0 14.1993 1.8002 16 4 16H12C14.1998 16 16 14.1993 16 12.0001V3.9999C16 1.80015 14.1998 0 12 0ZM14.6666 12.0001C14.6666 13.4701 13.4708 14.6666 12 14.6666H4C2.5298 14.6666 1.3334 13.4701 1.3334 12.0001V3.9999C1.3334 2.52955 2.5298 1.33337 4 1.33337H12C13.4708 1.33337 14.6666 2.52955 14.6666 3.9999V12.0001Z" fill="white"/>
-                                </svg>                                    
-                            </a>
-                            <a href="https://bd.linkedin.com/">
-                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M16 16V10.14C16 7.26 15.38 5.06 12.02 5.06C10.4 5.06 9.32 5.94 8.88 6.78H8.84V5.32H5.66V16H8.98V10.7C8.98 9.3 9.24 7.96 10.96 7.96C12.66 7.96 12.68 9.54 12.68 10.78V15.98H16V16Z" fill="white"/>
-                                    <path d="M0.26 5.32H3.58V16H0.26V5.32Z" fill="white"/>
-                                    <path d="M1.92 0C0.86 0 0 0.86 0 1.92C0 2.98 0.86 3.86 1.92 3.86C2.98 3.86 3.84 2.98 3.84 1.92C3.84 0.86 2.98 0 1.92 0Z" fill="white"/>
-                                </svg>                                                                       
-                            </a>
-                        </div> -->
-                    </div>
-                </div>
-                <!-- <div class="col-lg-4">
-                    <div class="our-team__item">
-                        <div class="our-team__item-media wow clip-a-z">
-                            <img src="./assets/imgs/landing/art.jpeg" alt="curtain images">
-                        </div>
-                        <div class="our-team__item__text">
-                            <h6><a href="tema-details.html">Artifacts</a></h6>
-                            <span>Stylish décor to complete your interiors</span>
-                        </div>
-
-                        <div class="our-team__item__socail">
-                            <a href="https://www.facebook.com">
-                                <svg width="8" height="16" viewBox="0 0 8 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M5.19311 16V8.70218H7.55084L7.90457 5.85725H5.19311V4.04118C5.19311 3.21776 5.41238 2.65661 6.55063 2.65661L8 2.65599V0.111384C7.74935 0.0775563 6.88896 0 5.88756 0C3.79647 0 2.36488 1.32557 2.36488 3.75942V5.85725H0V8.70218H2.36488V16H5.19311Z" fill="white"/>
-                                </svg>                                    
-                            </a>
-                            <a href="https://x.com/?lang=en">
-                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M8.3319 5.92804L13.5437 0H12.3087L7.78327 5.14724L4.16883 0H0L5.46574 7.78354L0 14H1.2351L6.01406 8.56434L9.83117 14H14L8.3319 5.92804ZM6.64026 7.85211L6.08647 7.07705L1.68013 0.909771H3.57717L7.13314 5.88696L7.68693 6.66202L12.3093 13.1316H10.4122L6.64026 7.85211Z" fill="white"/>
-                                </svg>
-                            </a>
-                            <a href="https://www.instagram.com/">
-                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M12.334 4.66649C12.8863 4.66649 13.334 4.21878 13.334 3.66651C13.334 3.11424 12.8863 2.66654 12.334 2.66654C11.7817 2.66654 11.334 3.11424 11.334 3.66651C11.334 4.21878 11.7817 4.66649 12.334 4.66649Z" fill="white"/>
-                                    <path d="M8.00002 3.9999C5.79041 3.9999 4.00002 5.79044 4.00002 7.9998C4.00002 10.2083 5.79041 12.0001 8.00002 12.0001C10.209 12.0001 12 10.2083 12 7.9998C12 5.79044 10.209 3.9999 8.00002 3.9999ZM8.00002 10.6667C6.5274 10.6667 5.33342 9.47278 5.33342 7.9998C5.33342 6.52683 6.5274 5.33327 8.00002 5.33327C9.47264 5.33327 10.6666 6.52683 10.6666 7.9998C10.6666 9.47278 9.47264 10.6667 8.00002 10.6667Z" fill="white"/>
-                                    <path d="M12 0H4C1.8002 0 0 1.80015 0 3.9999V12.0001C0 14.1993 1.8002 16 4 16H12C14.1998 16 16 14.1993 16 12.0001V3.9999C16 1.80015 14.1998 0 12 0ZM14.6666 12.0001C14.6666 13.4701 13.4708 14.6666 12 14.6666H4C2.5298 14.6666 1.3334 13.4701 1.3334 12.0001V3.9999C1.3334 2.52955 2.5298 1.33337 4 1.33337H12C13.4708 1.33337 14.6666 2.52955 14.6666 3.9999V12.0001Z" fill="white"/>
-                                </svg>                                    
-                            </a>
-                            <a href="https://bd.linkedin.com/">
-                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M16 16V10.14C16 7.26 15.38 5.06 12.02 5.06C10.4 5.06 9.32 5.94 8.88 6.78H8.84V5.32H5.66V16H8.98V10.7C8.98 9.3 9.24 7.96 10.96 7.96C12.66 7.96 12.68 9.54 12.68 10.78V15.98H16V16Z" fill="white"/>
-                                    <path d="M0.26 5.32H3.58V16H0.26V5.32Z" fill="white"/>
-                                    <path d="M1.92 0C0.86 0 0 0.86 0 1.92C0 2.98 0.86 3.86 1.92 3.86C2.98 3.86 3.84 2.98 3.84 1.92C3.84 0.86 2.98 0 1.92 0Z" fill="white"/>
-                                </svg>                                                                       
-                            </a>
-                        </div>
-                    </div>
-                </div> -->
-            </div>
-        </div>
-    </section>
-
-    <!--latest-project  area start -->
-    <section id="portfolio" class="latest-project section-space__bottom pt-5">
-        <div class="container">
-            <div class="row mb-55 mb-xs-40 align-items-end">
-                <div class="col-lg-6">
-                    <div class="section__title-wrapper">
-                        <span class="section__subtitle justify-content-center" id="works" style=" color:white;">latest projects</span>
-                        <h2 class="section__title title-animation" style=" color:white;">Our Projects & Designs</h2>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <p class=" des mb-0" style=" color:white;">We recently completed a stunning curtain installation that blends luxury, comfort, and modern design.
-This project features custom-made curtains, carefully selected to enhance natural light while adding depth and elegance to the space.</p>
-                </div>
-            </div>
-
-            <div class="row gx-100 mb-minus-60">
-
-                <div class="col-lg-6">
-                    <div class="latest-project__item">
-                        <div class="latest-project__media">
-                            <img class="wow clip-a-z" src="./assets/imgs/landing/bal.jpg" alt="curtain images">
-                            <a class="icon" href="#contact">
-                                <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M4.48633 23.4867L22.4072 5.56579" stroke="#906E50" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M14.3848 4.61475H23.3501V13.58" stroke="#906E50" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>                                                                                          
-                            </a>
-                        </div>
-                        <div class="latest-project__text">
-                            <h5 class="title-animation"><a href="#" style=" color:white;">Elegant Sheer Curtains</a></h5>
-                            <p class="mb-0">Where luxury meets comfort</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="latest-project__item">
-                        <div class="latest-project__media">
-                            <img class="wow clip-a-z" src="./assets/imgs/landing/home5.jpg" alt="curtain images">
-                            <a class="icon" href="#contact">
-                                <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M4.48633 23.4867L22.4072 5.56579" stroke="#906E50" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M14.3848 4.61475H23.3501V13.58" stroke="#906E50" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>                                                                                          
-                            </a>
-                        </div>
-                        <div class="latest-project__text">
-                            <h5 class="title-animation"><a href="protfolio-details.html" style=" color:white;">Effective Blackout Curtains</a></h5>
-                            <p class="mb-0">Dress Your Windows Beautifully.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="latest-project__item">
-                        <div class="latest-project__media">
-                            <img class="wow clip-a-z" src="./assets/imgs/landing/curtains-10.jpg" alt="curtain images">
-                            <a class="icon" href="#contact">
-                                <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M4.48633 23.4867L22.4072 5.56579" stroke="#906E50" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M14.3848 4.61475H23.3501V13.58" stroke="#906E50" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>                                                                                          
-                            </a>
-                        </div>
-                        <div class="latest-project__text">
-                            <h5 class="title-animation"><a href="protfolio-details.html" style=" color:white;">Floral & Patterned Curtains</a></h5>
-                            <p class="mb-0">Nature, woven beautifully</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="latest-project__item">
-                        <div class="latest-project__media">
-                            <img class="wow clip-a-z" src="./assets/imgs/landing/bal3.jpg" alt="curtain images">
-                            <a class="icon" href="#contact">
-                                <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M4.48633 23.4867L22.4072 5.56579" stroke="#906E50" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M14.3848 4.61475H23.3501V13.58" stroke="#906E50" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>                                                                                          
-                            </a>
-                        </div>
-                        <div class="latest-project__text">
-                            <h5 class="title-animation"><a href="protfolio-details.html" style=" color:white;">Modern & Designer Curtains</a></h5>
-                            <p class="mb-0">Designed for modern living</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--latest-project  area end -->
-
- 
-
-    <!-- why-choose-us start -->
-    <section class="why-choose-us" style="background-color: white; padding: 15px;">
-        <div class="container">
-            <div class="row">
-                <div class="section__title-wrapper text-center mb-55 mb-xs-40">
-                    <span class="section__subtitle justify-content-center" id="whyus">Why Choose Us</span>
+                    <!-- <span class="section__subtitle justify-content-center" id="whyus">Why Choose Us</span> -->
                     <h2 class="section__title title-animation">Our product solution</h2>
                     
                 </div>
@@ -961,8 +624,157 @@ This project features custom-made curtains, carefully selected to enhance natura
             </div>
         </div>
     </section>
-    <!-- why-choose-us end -->
 
+
+
+    <section class="compare-section">
+  <div class="container">
+    
+    <p class="tag">SMART VS CLASSIC</p>
+    <h2>Motorized or Manual?</h2>
+    <p class="subtitle">
+      Both systems offer exceptional quality. Choose the one that fits your lifestyle, home architecture, and budget.
+    </p>
+
+    <div class="cards">
+      
+      <!-- Card 1 -->
+      <div class="card">
+        <div class="card-header">Motorized Systems</div>
+        <div class="card-body">
+          <div class="row">
+            <span>BEST FOR</span>
+            <p>High-reach windows, home theaters, smart homes</p>
+          </div>
+          <div class="row">
+            <span>CONTROL</span>
+            <p>Remote, app, or voice control (Alexa / Google)</p>
+          </div>
+          <div class="row">
+            <span>BRANDS</span>
+            <p>Somfy, Dooya, LivFuture, premium imports</p>
+          </div>
+          <div class="row">
+            <span>IDEAL ROOMS</span>
+            <p>Living room, home theater, office spaces</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="card">
+        <div class="card-header">Manual & Classic</div>
+        <div class="card-body">
+          <div class="row">
+            <span>BEST FOR</span>
+            <p>Bedrooms, traditional decor, budget flexibility</p>
+          </div>
+          <div class="row">
+            <span>CONTROL</span>
+            <p>Elegant pull-cords or wand systems</p>
+          </div>
+          <div class="row">
+            <span>BRANDS</span>
+            <p>Wide range of designer fabric options</p>
+          </div>
+          <div class="row">
+            <span>IDEAL ROOMS</span>
+            <p>Bedrooms, dining rooms, kids' spaces</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+  
+
+
+
+ 
+  <!--about-us area start -->
+    <section id="about-us" class="about-us section-space">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="about-us__media">
+                        <img class="wow clip-a-z" src="assets/imgs/landing/image.png" alt="curtain images">
+
+                        <div class="about-us__box">
+                            <h4><span class="odometer" data-count="20">0</span></h4>
+                            <h6>Years <br> Experience</h6>
+                        </div>
+
+                        <!-- <div class="about-us__socail">
+                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        </div> -->
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="about-us__content">
+                        <div class="section__title-wrapper mb-45 mb-xs-40">
+                            <span class="section__subtitle justify-content-center" id="about-us">About Us</span>
+                            <h3 class="section__title mb-25 title-animation" style=" color:white;">Best Window Curtains & Blinds in Bangalore | Custom Designs for Your Home</h3>
+                            <p class="mb-1" style=" color:white;">At Desired Designs, we bring you a premium collection of window curtains and blinds in Bangalore that perfectly blend European elegance with the functional needs of Indian homes. Whether you're looking for modern minimalism or classic charm, our made-to-measure solutions are designed to transform your living spaces.</p>
+                            <!-- <p class="mb-1" style=" color:white;">Our goal is to enhance homes across Bangalore with customized window solutions that provide elegance, privacy, light control, and modern smart convenience. Whether you prefer soft natural light, complete blackout comfort, or automated motorized systems, we tailor every curtain to match your lifestyle and space.</p>
+                            <p class="mb-0" style=" color:white;">From expert measurement to professional installation, we ensure a perfect fit, premium quality fabrics, and flawless finishing for every window.</p> -->
+                        </div>
+
+                        <div class="skill-one__progress mb-50 mb-xs-30">
+                            <div class="skill-one__progress-single">
+                                <h6 class="skill-one__progress-title" style=" color:white;">Sheer curatisn</h6>
+                                <div class="bar">
+                                    <div class="bar-inner count-bar counted" data-percent="90%">
+                                        <div class="count-text" style=" color:white;">90%</div>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="skill-one__progress-single">
+                                <h6 class="skill-one__progress-title" style=" color:white;">Balckout Curtains</h6>
+                                <div class="bar">
+                                    <div class="bar-inner count-bar counted" data-percent="80%">
+                                        <div class="count-text" style=" color:white;">80%</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-one__progress-single">
+                                <h6 class="skill-one__progress-title" style=" color:white;">Motorized Curtains</h6>
+                                <div class="bar">
+                                    <div class="bar-inner count-bar counted" data-percent="95%">
+                                        <div class="count-text" style=" color:white;">95%</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <a href="#contact" class="rr-btn">
+                            <span class="btn-wrap">
+                                <span class="text-one">Learn More 
+                                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 6.5H11" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M6 1.5L11 6.5L6 11.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </span>
+                                <span class="text-two">Learn More 
+                                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 6.5H11" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M6 1.5L11 6.5L6 11.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </span>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--about-us area end -->
 
 
    
@@ -1115,115 +927,7 @@ The delivery was on time. Overall, a great experience. I would definitely recomm
   </div>
 </section>
 
-<section class="faq-section">
-  <div class="container">
-    <h2 class="faq-title">Frequently Asked Questions</h2>
 
-    <div class="faq">
-
-      <div class="faq-item">
-        <button class="faq-question">
-          Do you provide home visit for curtain measurement?
-          <span>+</span>
-        </button>
-        <div class="faq-answer">
-          <p>Yes, we provide a free home visit for curtain measurement and consultation to ensure the perfect fit for your windows.</p>
-        </div>
-      </div>
-
-      <div class="faq-item">
-        <button class="faq-question">
-          What types of curtains do you offer?
-          <span>+</span>
-        </button>
-        <div class="faq-answer">
-          <p>We offer a wide range of curtains including sheer curtains, blackout curtains, motorized curtains, linen curtains, and custom designer curtains for homes and offices.</p>
-        </div>
-      </div>
-
-      <div class="faq-item">
-        <button class="faq-question">
-          Do you provide custom-made curtains?
-          <span>+</span>
-        </button>
-        <div class="faq-answer">
-          <p>Yes, we specialize in custom-made curtains based on your window size, interior design, and fabric preference.</p>
-        </div>
-      </div>
-
-      <div class="faq-item">
-        <button class="faq-question">
-          How long does curtain installation take?
-          <span>+</span>
-        </button>
-        <div class="faq-answer">
-          <p>Once the design and fabric are finalized, installation usually takes 3–7 days depending on the project size.</p>
-        </div>
-      </div>
-
-      <div class="faq-item">
-        <button class="faq-question">
-          How long does curtain installation take?
-          <span>+</span>
-        </button>
-        <div class="faq-answer">
-          <p>Once the design and fabric are finalized, installation usually takes 3–7 days depending on the project size.</p>
-        </div>
-      </div>
-
-      <div class="faq-item">
-        <button class="faq-question">
-          Do you provide curtain installation services?
-          <span>+</span>
-        </button>
-        <div class="faq-answer">
-          <p>Yes, our team provides complete curtain installation services, including rods, tracks, and fittings.</p>
-        </div>
-      </div>
-
-      <div class="faq-item">
-        <button class="faq-question">
-          Can I see curtain samples before ordering?
-          <span>+</span>
-        </button>
-        <div class="faq-answer">
-          <p>Yes, during the consultation we bring samples and design options so you can choose the best one for your space.</p>
-        </div>
-      </div>
-
-      <div class="faq-item">
-        <button class="faq-question">
-          Do you provide motorized curtains?
-          <span>+</span>
-        </button>
-        <div class="faq-answer">
-          <p>Yes, we offer motorized and smart curtains that can be controlled using remote or smart home systems.</p>
-        </div>
-      </div>
-
-      <div class="faq-item">
-        <button class="faq-question">
-          Which areas do you serve?
-          <span>+</span>
-        </button>
-        <div class="faq-answer">
-          <p>We provide curtain services in entire Bangalore and nearby areas, including home consultation and installation.</p>
-        </div>
-      </div>
-
-      <div class="faq-item">
-        <button class="faq-question">
-          How can I book a consultation?
-          <span>+</span>
-        </button>
-        <div class="faq-answer">
-          <p>You can fill out the contact form on this page or call us, and our team will schedule a consultation at your convenience.</p>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
 
    
 </main>
@@ -1276,7 +980,7 @@ The delivery was on time. Overall, a great experience. I would definitely recomm
                             </div>
 
                             <div class="footer__content mb-30 mb-xs-35">
-                                <p class="mb-0">Inoterior design consultancy firm that brings sensitivity to the design top restaurants, hotels <a href="blog-details">Read more!</a></p>
+                                <p class="mb-0">Ready to upgrade your interiors? Visit our showroom in HSR LAYOUT SECTOR 7,Bangalore, or reach out to our experts.</p>
                             </div>
 
                             <!-- <div class="footer__support"> 
@@ -1304,15 +1008,15 @@ The delivery was on time. Overall, a great experience. I would definitely recomm
 
                             <div class="footer__contact">
                                 <ul>
-                                    <!-- <li>
+                                    <li>
                                         <span class="icon">
                                             <img src="assets/imgs/icon/call.svg" alt="">
                                         </span>
                                         <span class="text">
                                             <span>Phone Number</span>
-                                            <a href="tel:9342656968">+91 9342656968</a>
+                                            <a href="tel:+91 9342656968">+91 93426 56968</a>
                                         </span>
-                                    </li> -->
+                                    </li>
                                     <li>
                                         <span class="icon">
                                             <img src="assets/imgs/icon/mail.svg" alt="">
@@ -1328,8 +1032,7 @@ The delivery was on time. Overall, a great experience. I would definitely recomm
                                         </span>
                                         <span class="text">
                                             <span>Location</span>
-                                            <a target="_blank" href="https://maps.app.goo.gl/1N77c8d8zieLRaot7">Desired Designs,
-#675, Ground floor, 9th Main Road, 7th Sector HSR Layout,Bangalore 560102</a>
+                                            <a target="_blank" href="https://maps.app.goo.gl/1N77c8d8zieLRaot7">Location Desired Designs, 675, 9th Main Rd, 7th Sector, HSR Layout, Bengaluru, Karnataka 560102</a>
                                         </span>
                                     </li>
                                 </ul>
