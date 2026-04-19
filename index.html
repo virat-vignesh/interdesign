@@ -395,7 +395,7 @@ h2 {
 .icon {
   width: 40px;
   height: 40px;
-  border: 1px solid #c7a44b;
+  /* border: 1px solid #c7a44b; */
   margin-bottom: 15px;
 }
 
@@ -437,6 +437,206 @@ h2 {
   }
 }
     </style>
+
+    <style>
+ 
+
+    .popup-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.65);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+      opacity: 0;
+      visibility: hidden;
+      transition: 0.3s ease;
+      padding: 20px;
+    }
+
+    .popup-overlay.active {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .popup-box {
+      width: 100%;
+      max-width: 950px;
+      
+      border-radius: 18px;
+      overflow: hidden;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
+      position: relative;
+      animation: popupFade 0.4s ease;
+    }
+
+    @keyframes popupFade {
+      from {
+        transform: translateY(20px) scale(0.96);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+      }
+    }
+
+    .popup-left {
+      background: url('https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1200&q=80') center/cover no-repeat;
+      min-height: 550px;
+      position: relative;
+    }
+
+    .popup-left::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(27, 27, 27, 0.45);
+    }
+
+    .popup-left-content {
+      position: absolute;
+      z-index: 2;
+      bottom: 35px;
+      left: 35px;
+      right: 35px;
+      color: #fff;
+    }
+
+    .popup-left-content h2 {
+      font-size: 34px;
+      line-height: 1.2;
+      margin-bottom: 12px;
+    }
+
+    .popup-left-content p {
+      font-size: 15px;
+      line-height: 1.6;
+      color: #f0f0f0;
+    }
+
+    .popup-right {
+      padding: 35px 28px;
+      background: #fffdf9;
+    }
+
+    .popup-right h3 {
+      font-size: 28px;
+      color: #222;
+      margin-bottom: 8px;
+    }
+
+    .popup-right .subtext {
+      font-size: 14px;
+      color: #666;
+      margin-bottom: 20px;
+      line-height: 1.5;
+    }
+
+    .form-group {
+      margin-bottom: 14px;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      width: 100%;
+      padding: 13px 14px;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      font-size: 14px;
+      outline: none;
+      
+      transition: 0.3s;
+    }
+
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+      border-color: #8b6b4a;
+      box-shadow: 0 0 0 3px rgba(139, 107, 74, 0.10);
+    }
+
+    .form-group textarea {
+      resize: none;
+      min-height: 90px;
+    }
+
+    .submit-btn {
+      width: 100%;
+      padding: 14px;
+      background: #8b6b4a;
+      color: #fff;
+      border: none;
+      border-radius: 10px;
+      font-size: 15px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .submit-btn:hover {
+      background: #6e5339;
+    }
+
+    .close-btn {
+      position: absolute;
+      top: 14px;
+      right: 14px;
+      width: 38px;
+      height: 38px;
+      border: none;
+      border-radius: 50%;
+   
+      font-size: 20px;
+      cursor: pointer;
+      color: #222;
+      z-index: 10;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    }
+
+    @media (max-width: 768px) {
+      .popup-box {
+        grid-template-columns: 1fr;
+        max-width: 500px;
+      }
+
+      .popup-left {
+        min-height: 240px;
+      }
+
+      .popup-left-content h2 {
+        font-size: 24px;
+      }
+
+      .popup-right {
+        padding: 22px 18px;
+      }
+    }
+
+.typing {
+  overflow: hidden;
+  /* border-right: 2px solid white; */
+  white-space: nowrap;
+  width: 100%;
+  color: white;
+}
+
+.typing.animate {
+  animation: typing 3s steps(20, end), blink 0.5s infinite;
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+  </style>
 </head>
 
 <body class="body-1">
@@ -546,6 +746,66 @@ h2 {
 <!-- Offcanvas area start -->
 
 
+ <div class="popup-overlay" id="popupOverlay">
+    <div class="popup-box">
+      <button class="close-btn" id="closePopup">&times;</button>
+
+      <div class="popup-left">
+        <div class="popup-left-content">
+          <h2>Upgrade Your Home with Premium Curtains</h2>
+          <p>Book a free consultation for stylish curtains, blinds, and custom window solutions for your home or office.</p>
+        </div>
+      </div>
+
+      <div class="popup-right">
+        <h3>Get Free Curtain Consultation</h3>
+        <p class="subtext">Fill in your details and our team will help you choose the perfect curtains and blinds.</p>
+
+        <form>
+          <div class="form-group">
+            <input type="text" placeholder="Full Name" required>
+          </div>
+
+          <div class="form-group">
+            <input type="tel" placeholder="Phone Number" required>
+          </div>
+
+          <div class="form-group">
+            <input type="email" placeholder="Email Address" required>
+          </div>
+
+          <div class="form-group">
+            <select required>
+              <option value="">Select Product Type</option>
+              <option>Curtains</option>
+              <option>Sheer Curtains</option>
+              <option>Blackout Curtains</option>
+              <option>Window Blinds</option>
+              <option>Roller Blinds</option>
+              <option>Roman Blinds</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <select required>
+              <option value="">Select Space</option>
+              <option>Living Room</option>
+              <option>Bedroom</option>
+              <option>Office</option>
+              <option>Villa</option>
+              <option>Full Home</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <textarea placeholder="Tell us your requirement"></textarea>
+          </div>
+
+          <button type="submit" class="submit-btn">Request Free Quote</button>
+        </form>
+      </div>
+    </div>
+  </div>
 
 
 <main>
@@ -831,7 +1091,7 @@ h2 {
   <div class="container">
 
     <p class="tag">OUR COLLECTIONS</p>
-    <h2>Curated for every room & style</h2>
+    <h2 class="typing">Curated for every room & style</h2>
     <p class="subtitle">
       From blackout bedrooms to sun-drenched living rooms — explore our full range of designer curtains and smart blind systems.
     </p>
@@ -873,7 +1133,7 @@ h2 {
   <div class="container">
     
     <p class="tag">SMART VS CLASSIC</p>
-    <h2>Motorized or Manual?</h2>
+    <h2 class="typing">Motorized or Manual?</h2>
     <p class="subtitle">
       Both systems offer exceptional quality. Choose the one that fits your lifestyle, home architecture, and budget.
     </p>
@@ -936,7 +1196,7 @@ h2 {
   <div class="container">
 
     <p class="tag">HOW IT WORKS</p>
-    <h2>The Zero-Stress Process</h2>
+    <h2 class="typing">The Zero-Stress Process</h2>
     <p class="subtitle">
       We bring the showroom experience directly to your home — from fabric samples to final installation.
     </p>
@@ -1317,8 +1577,8 @@ The delivery was on time. Overall, a great experience. I would definitely recomm
                                         <span class="icon">
                                             <img src="assets/imgs/icon/map.svg" alt="">
                                         </span>
-                                        <span class="text">
-                                            <span>Location</span>
+                                        <span class="text" style="border: none;">
+                                            <span >Location</span>
                                             <a target="_blank" href="https://maps.app.goo.gl/1N77c8d8zieLRaot7">Location Desired Designs, 675, 9th Main Rd, 7th Sector, HSR Layout, Bengaluru, Karnataka 560102</a>
                                         </span>
                                     </li>
@@ -1433,6 +1693,39 @@ document.getElementById("contactModal").style.display="none";
 }
 
 </script>
+<script>
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.remove("animate"); // reset
+      void entry.target.offsetWidth; // force reflow
+      entry.target.classList.add("animate"); // restart animation
+    }
+  });
+});
+
+document.querySelectorAll(".typing").forEach(el => {
+  observer.observe(el);
+});
+</script>
+
+ <script>
+    window.addEventListener("load", function () {
+      setTimeout(function () {
+        document.getElementById("popupOverlay").classList.add("active");
+      }, 700);
+    });
+
+    document.getElementById("closePopup").addEventListener("click", function () {
+      document.getElementById("popupOverlay").classList.remove("active");
+    });
+
+    document.getElementById("popupOverlay").addEventListener("click", function (e) {
+      if (e.target === this) {
+        this.classList.remove("active");
+      }
+    });
+  </script>
 
 <!-- JS here -->
 <script src="assets/js/vendor/jquery-3.7.1.min.js"></script>
