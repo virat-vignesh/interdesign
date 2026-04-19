@@ -371,7 +371,7 @@ h2 {
 
 /* CARD */
 .collection-card {
-  padding: 40px;
+  padding: 30px;
   border-right: 1px solid rgba(255,255,255,0.15);
   border-bottom: 1px solid rgba(255,255,255,0.15);
 }
@@ -382,7 +382,7 @@ h2 {
 
 .collection-card h3 {
   color: #e3c066;
-  margin: 15px 0;
+  margin: 15px 10px;
 }
 
 .collection-card p {
@@ -485,7 +485,7 @@ h2 {
     }
 
     .popup-left {
-      background: url('https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1200&q=80') center/cover no-repeat;
+      background: url('assets/imgs/landing/home1.jpg') center/cover no-repeat;
       min-height: 550px;
       position: relative;
     }
@@ -635,6 +635,27 @@ h2 {
 
 @keyframes blink {
   50% { border-color: transparent; }
+}
+
+.collection-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  /* border-radius: 12px;
+  margin-bottom: 15px; */
+}
+
+.collection-card {
+  background: rgb(35, 52, 35);
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  transition: 0.3s;
+  margin: 10px;
+}
+
+.collection-card:hover {
+  transform: translateY(-5px);
 }
   </style>
 </head>
@@ -879,7 +900,7 @@ h2 {
                                     <div class="banner__item-content">
                                         <div class="banner__item-wrapper">
                                             <h1 class="banner__item-title rr-fw-bold color-white">
-                                               Elegant <br> Sheer Curtains
+                                               Premium <br> curtains & Blinds
                                             </h1>
                                             <p class="des color-white mb-45 mb-md-30">Upgrade Your Home with Premium Curtains & Smart Window Solutions</p>
     
@@ -1087,7 +1108,7 @@ h2 {
         </div>
     </section>
 
-    <section class="collection-section">
+   <section class="collection-section">
   <div class="container">
 
     <p class="tag">OUR COLLECTIONS</p>
@@ -1099,7 +1120,7 @@ h2 {
     <div class="collection-grid">
 
       <div class="collection-card">
-        <!-- <div class="icon box"></div> -->
+        <img src="assets/imgs/landing/home4.jpeg" alt="Blackout Curtains">
         <h3>Blackout Curtains</h3>
         <p>
           Complete light blocking for restful bedroom sleep. Available in linen, cotton, silk, and velvet.
@@ -1107,15 +1128,15 @@ h2 {
       </div>
 
       <div class="collection-card">
-        <!-- <div class="icon circle"></div> -->
-        <h3>Sheer & Voile</h3>
+        <img src="assets/imgs/landing/curtains-17.jpg" alt="Sheer Curtains">
+        <h3>Sheer  <br> & Voile</h3>
         <p>
           Softly diffuse natural light in living rooms while maintaining an airy, open ambience.
         </p>
       </div>
 
       <div class="collection-card">
-        <!-- <div class="icon triangle"></div> -->
+        <img src="assets/imgs/landing/home2.jpeg" alt="Geometric Curtains">
         <h3>Geometric & Floral</h3>
         <p>
           Themed collections for kids’ rooms, bold statement walls, and playful modern interiors.
@@ -1144,6 +1165,9 @@ h2 {
       <div class="card">
         <div class="card-header">Motorized Systems</div>
         <div class="card-body">
+
+          <img src="assets/imgs/landing/curtains-06.jpg" alt="Motorized Curtains" class="card-img">
+
           <div class="row">
             <span>BEST FOR</span>
             <p>High-reach windows, home theaters, smart homes</p>
@@ -1167,6 +1191,9 @@ h2 {
       <div class="card">
         <div class="card-header">Manual & Classic</div>
         <div class="card-body">
+
+          <img src="assets/imgs/landing/curtains-10.jpg" alt="Manual Curtains" class="card-img">
+
           <div class="row">
             <span>BEST FOR</span>
             <p>Bedrooms, traditional decor, budget flexibility</p>
